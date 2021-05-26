@@ -1,20 +1,26 @@
 .header{
     display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    width: 100%;
+    position: static;
+    top: 0;
+    z-index: 999;
 
 }
 
 .header_left{
 
     display: flex;
-    margin: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .header_left > img{
     /* to keep the aspect ratio */
     object-fit: contain;
     height: 40px;
-    margin-right: 20px;
-    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
@@ -32,4 +38,10 @@
     outline: none;
     border: none;
     background: none;
+}
+.header_right{
+
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
